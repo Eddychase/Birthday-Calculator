@@ -16,10 +16,20 @@
           <h2>Enter Your Details Here!</h2>
           <form name="myForm" class="form" onsubmit="validate();">
             <div class="form-group">
+              <label for="number">Century of Birth:</label>
+              <input type="number" class="form-control" id="century" placeholder="Century of Birth Eg 19 for 20th century births" name="Century">
               <label for="number">Year of Birth:</label>
               <input type="number" class="form-control" id="year" placeholder="Year of Birth Eg: 2019 if born in 2019" name="year">
               <label for="month">Month of Birth:</label>
               <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">
               <label for="date">Date of Birth:</label>
               <input type="number" class="form-control" id="date" placeholder="Date of Birth eg 05 for May" name="date">
+              <form>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+              </form>
            
