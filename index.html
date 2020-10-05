@@ -5,6 +5,9 @@
     <title>Akan Names</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+      alert(document.getElementById(date));
+    </script>
 </head>
 <body>
     <div class="Header">
@@ -16,26 +19,27 @@
             <p>The naming of their children is based on the respective day of the week the child was born, and based on what gender the child is.</p>
             <p>The Akan have defined the seven names of the week based on the gender of the child.</p>
             <h2>Fill The Form Below</h2>
-           
-            <form name="myForm" class="form" onsubmit="validate();">
             <div class="form-group">
-              <label for="number">Date of Birth</label>
-              <input type="date" class="form-control" id="Date" placeholder="Century of Birth Eg,19 for 20th century births" name="Date">
-             
-              <form>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-              </form>
-              <button onclick="myFunction()">Submit</button>
+              <form name="myForm" class="form" >
+                <div class="form-group">
+                  <label for="number">Date of Birth</label>
+                  <input type="date" class="form-control" id="Date" placeholder="Century of Birth Eg,19 for 20th century births" name="Date">
+                 
+                  
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                    <button onclick="myFunction()">Submit</button>
+                </form>
+               
+                </div>
+                <p id="results"> </p>
             </div>
-            <p id="results"> </p>
-        </div>
-    </div>
-    <script src="js/scripts.js"></script>
+
+    <script src="Js/scripts.js"></script>
   
 </body>
 </html>
