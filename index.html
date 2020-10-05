@@ -12,20 +12,16 @@
     </div>
       <div class="overlay">
         <div class="container">
-          <p>The ghanian people are made up of hundreds of ethnic groups and tribes that have different cultural backgrounds and speak different languages, but all share the same technique in the naming of their children. </p>
-          <p>The naming of their children is based on the respective day of the week the child was born, and based on what gender the child is.</p>
-          <p>The Akan have defined the seven names of the week based on the gender of the child.</p>
-          <h2>Fill The Form Below</h2>
-          <form name="myForm" class="form" onsubmit="validate();">
+            <p>The ghanian people are made up of hundreds of ethnic groups and tribes that have different cultural backgrounds and speak different languages, but all share the same technique in the naming of their children. </p>
+            <p>The naming of their children is based on the respective day of the week the child was born, and based on what gender the child is.</p>
+            <p>The Akan have defined the seven names of the week based on the gender of the child.</p>
+            <h2>Fill The Form Below</h2>
+           
+            <form name="myForm" class="form" onsubmit="validate();">
             <div class="form-group">
-              <label for="number">Century of Birth</label>
-              <input type="number" class="form-control" id="century" placeholder="Century of Birth Eg,19 for 20th century births" name="Century">
-              <label for="number">Year of Birth</label>
-              <input type="number" class="form-control" id="year" placeholder="Year of Birth Eg,2019 if born in 2019" name="year">
-              <label for="month">Month of Birth</label>
-              <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">
-              <label for="date">Date of Birth</label>
-              <input type="number" class="form-control" id="date" placeholder="Date of Birth Eg,05 for May" name="date">
+              <label for="number">Date of Birth</label>
+              <input type="date" class="form-control" id="Date" placeholder="Century of Birth Eg,19 for 20th century births" name="Date">
+             
               <form>
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label><br>
@@ -34,16 +30,13 @@
                 <input type="radio" id="other" name="gender" value="other">
                 <label for="other">Other</label>
               </form>
+              <button onclick="myFunction()">Submit</button>
             </div>
             <p id="results"> </p>
         </div>
     </div>
-    <div class="card">
-        <div class="card-body">
-            <p class="card-text">Based on the tradition of the Akan tribe that grants names based on the day of the week one is born, this application allows one to identify the day they were born</p>
-            <p class="card-text">The results which are the days of the week are printed in the form of in native Akan</p>
-
-
-
-
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+   
            
