@@ -1,6 +1,6 @@
 # {Akan Name Generator}
 #### {An application that generates an akan name based on the birthday}, {07/10/2020}
-#### By **{List of contributors}**
+#### By **{Edwin Kanyotu}**
 ## Description
 {This is an application that takes in the dates of an individual's birthday and uses a formula that allows it to generate an Akan name. It also requires an individual's gender. }
 ## Setup/Installation Requirements
