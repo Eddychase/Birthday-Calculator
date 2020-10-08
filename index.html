@@ -5,9 +5,17 @@
     <title>Akan Names</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script>
-      alert(document.getElementById(date));
-    </script>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input[type='button']").click(function(){
+            var radioValue = $("input[name='gender']:checked").val();
+            if(radioValue){
+                alert("Your are a " + radioValue);
+            }
+        });
+    });
+</script>
 </head>
 <body>
     <div class="Header">
