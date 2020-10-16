@@ -1,13 +1,13 @@
 body{
-    background-image: url(../images/blackandwhite.jfif);
+    background-image: url(../images/i_i.jpg);
     padding-right: 50px;
-    background-size: cover;
-    background-attachment: fixed;
+    
+   
 }
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    color: black;
+    color:white;
     margin-bottom: 0px;
     margin-top: 10px;
     padding-bottom: 2px;
@@ -18,15 +18,16 @@ h2{
     text-align: center;
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
 }
 .card-body{
-    color: black;
+    color:white;
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 600;
 }
 .form-group{
-    color:black;
+    color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -36,5 +37,6 @@ p{
     font-weight: bolder;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: wheat;
 }
   
