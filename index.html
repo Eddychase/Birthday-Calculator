@@ -5,53 +5,60 @@
     <title>Akan Names</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $("input[type='button']").click(function(){
-            var radioValue = $("input[name='gender']:checked").val();
-            if(radioValue){
-                alert("Your are a " + radioValue);
-            }
-        });
-    });
-</script>
+    
+    <script src="Js/scripts.js"></script>
+
 </head>
 <body>
     <div class="Header">
         <h1>Welcome To Akan Names</h1>
     </div>
-      <div class="overlay">
+    <div class="overlay">
         <div class="container">
             <p>The ghanian people are made up of hundreds of ethnic groups and tribes that have different cultural backgrounds and speak different languages, but all share the same technique in the naming of their children. </p>
             <p>The naming of their children is based on the respective day of the week the child was born, and based on what gender the child is.</p>
             <p>The Akan have defined the seven names of the week based on the gender of the child.</p>
             <h2>Fill The Form Below</h2>
-            <div class="form-group">
+            <form name="myForm" class="form">
+              <div class="form-group">
+                <label for="number">Century:</label>
+                <input type="number" class="form-control" id="century" placeholder="Eg:19" name="century" min="19" max="20" step="1" required>
+            </div>
                 <div class="form-group">
-                  <form>
-                    <label for="Date"> Date</label>
-                    <input type="text" name="dateProvided" id="dateProvided" placeholder="MM/DD/YYYY">
-                    <br>
-                     <p> 
-                      <label><input type="radio" name="gender" value="male">Male</label> 
-                      <label><input type="radio" name="gender" value="female">Female</label>
-                     </p>
-                     <p><input type="button" value="Get Value"></p>
-                  
-                  
-                  
-                  
-                  </form>
-                   <h1 id="result"></h1>
+                    <label for="number">Year:</label>
+                    <input type="number" class="form-control" id="year" placeholder="Eg:20" name="year" min="01" max="99" step="1" required>
                 </div>
+                <div class="form-group">
+                  <label for="month">Month:</label>
+                  <input type="number" class="form-control" id="month" placeholder="Eg:01" name="month" min="01" max="12" step="1" required>
+                </div>
+                <div class="form-group">
+                  <label for="date">Date:</label>
+                  <input type="number" class="form-control" id="date" placeholder="Eg:07" name="date" min="1" max="31" step="1" required>
+                </div>
+                <div class="form-group">
+                  <label for="month">Gender</label><br>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">male
+                      <input type="radio" class="form-check-input" name="gender" id="male" value="male"> 
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">female
+                      <input type="radio" class="form-check-input" name="gender" id="female" value="female"> 
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-danger" onclick="akanName();">Find out Your Akan Name</button>
+                <br>
+              </form>
+              <p id="results"> </p>
               
                
             </div>
                 
-            </div>
-
-    <script src="Js/scripts.js"></script>
-  
+        </div>
+    </div>
+    
 </body>
 </html>
