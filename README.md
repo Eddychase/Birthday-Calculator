@@ -5,8 +5,7 @@
 {This is an application that takes in the dates of an individual's birthday and uses a formula that allows it to generate an Akan name. It also requires an individual's gender. }
 ## Setup/Installation Requirements
 * windows 10 or macOs
-## Known Bugs
-{It seems to print out a digital result on the console. Application not ready.}
+
 ## Technologies Used
  * html
  * css
